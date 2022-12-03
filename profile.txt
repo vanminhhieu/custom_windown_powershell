@@ -1,0 +1,13 @@
+oh-my-posh init pwsh --config "C:\Users\ASUS\Documents\Theme Windown PowerShell\atomic.omp.json" | Invoke-Expression
+function touch {
+  Param(
+    [Parameter(Mandatory=$true)]
+    [string]$Path
+  )
+ 
+  if (Test-Path -LiteralPath $Path) {
+    (Get-Item -Path $Path).LastWriteTime = Get-Date
+  } else {
+    New-Item -Type File -Path $Path
+  }
+}
