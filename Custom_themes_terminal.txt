@@ -1,0 +1,37 @@
+---Link: https://youtu.be/FvHNfpH8fxM
+B1: Run PowerShell as Administrator
+
+B2: Nhập lần lượt các lệnh sau:
+
+Set-ExecutionPolicy RemoteSigned
+
+Install-Module posh-git -Scope CurrentUser
+
+Install-Module oh-my-posh -Scope CurrentUser
+
+notepad $PROFILE (Nếu k có sẵn file này thì có thể thay thế bằng lệnh: CODE $PROFILE)
+
+B3: Copy các lệnh sau vào $PROFILE
+
+Import-Module posh-git
+Import-Module oh-my-posh
+Set-PoshPrompt -Theme sorin 
+
+B4: Thêm lệnh này bằng PowerShell administrator:
+
+Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ohmyposh.dev/install.ps1'))
+
+Install-Module oh-my-posh
+
+B5: Tắt tất cả các file
+
+---Link: https://youtu.be/tgKAW5ha_4A
+
+B6: Cài đặt font chữ "Meslo" cho PowerShell trên Terminal: https://github.com/hieuuu/fonts.git
+
+B7: Down themes cần sử dụng: https://ohmyposh.dev/docs/themes
+
+B8: Mở file $PROFILE
+
+B9: Copy đoạn code này vào: oh-my-posh init pwsh --config "D:\custom_windown_powershell\atomic.omp.json" | Invoke-Expression
+---"D:\custom_windown_powershell\atomic.omp.json": là link path themes mưới down về
