@@ -1,4 +1,4 @@
----Link: https://youtu.be/FvHNfpH8fxM
+---Link: https://youtu.be/eaidLAFGn8c
 B1: Run PowerShell as Administrator
 
 B2: Nhập lần lượt các lệnh sau:
@@ -33,5 +33,7 @@ B7: Down themes cần sử dụng: https://ohmyposh.dev/docs/themes
 
 B8: Mở file $PROFILE
 
-B9: Copy đoạn code này vào: oh-my-posh init pwsh --config "D:\custom_windown_powershell\atomic.omp.json" | Invoke-Expression
----"D:\custom_windown_powershell\atomic.omp.json": là link path themes mưới down về
+B9: Copy đoạn code này vào: 
+oh-my-posh init pwsh --config "D:\custom_windown_powershell\atomic.omp.json" | Invoke-Expression
+
+---"D:\custom_windown_powershell\atomic.omp.json": là link path themes mới down về
